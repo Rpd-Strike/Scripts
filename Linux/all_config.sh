@@ -56,3 +56,7 @@ source ./general_config/config_lsd.sh
 # 3. p10k
 echo " -->> configuring p10k theme (exit after please) (press enter...)" && read
 source ./general_config/config_p10k.sh
+
+# 4. bash to zsh
+echo " -->> configuring bash to start zsh (press enter ...)" && read
+source ./general_config/final_config.sh

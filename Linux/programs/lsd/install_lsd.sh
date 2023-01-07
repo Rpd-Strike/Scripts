@@ -7,4 +7,5 @@ source $CONDA_PATH/etc/profile.d/conda.sh
 
 conda activate base
 
+source $HOME/.cargo/env
 cargo install lsd
