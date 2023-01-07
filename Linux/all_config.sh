@@ -34,8 +34,16 @@ source ./programs/neovim/install_neovim.sh
 echo " -->> installing p10k theme (press enter...)" && read
 source ./programs/powerlevel10k/install_p10k.sh
 
+# 7. autocomplete
+echo " -->> installing zsh autocomplete (press enter)" && read
+source ./programs/zsh_extras/autocomplete.sh
+
 
 # ------ post-configuration
+
+# 0. git stuff
+echo " -->> configuring git shortcuts" && read
+source ./general_config/config_git.sh
 
 # 1. input commands for navigation
 echo " -->> configuring input commands & navigation (press enter...)" && read

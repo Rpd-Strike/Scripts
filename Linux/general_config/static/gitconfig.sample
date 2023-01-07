@@ -1,0 +1,44 @@
+###  Git config
+
+# git autocomplete
+echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
+
+# git aliases
+
+# Command to edit the current git branch description
+# git branch --edit-description
+
+
+# Alias to show the description for the current branch
+
+alias git-branch-describe='for line in $(git branch --show-current); do 
+     description=$(git config branch.$line.description)
+     if [ -n "$description" ]; then
+       echo -e ">>> $line  \n\n$description"
+     fi
+done'
+
+
+# Alias to show description of all branches, even if they do not have descriptions
+
+alias git-branch-describe-all='for line in $(git branch); do 
+  description=$(git config branch.$line.description)
+  if [ -n "$description" ]; then
+    echo "-- active branch --"
+  else
+    echo "-------------------"
+  fi
+  if [ "$line" != "*" ]; then
+    echo -e ">>> $line"
+    if [ -n "$description" ]; then
+      echo -e "\n$description"
+    fi
+  fi 
+done'
+
+
+# Feel free to use these aliases or not
+
+alias gbe='git branch --edit-description'
+alias gbd='git-branch-describe'
+alias gbda='git-branch-describe-all'
