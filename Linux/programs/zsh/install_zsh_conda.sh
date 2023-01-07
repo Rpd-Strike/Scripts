@@ -1,5 +1,5 @@
 #!/bin/bash
 
-conda install zsh -y -c conda-forge
+source $(dirname "$0")/conda_path.sh
 
-zsh
+$CONDA_PATH/bin/conda install zsh -y -c conda-forge

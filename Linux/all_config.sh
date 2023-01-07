@@ -1,13 +1,36 @@
 #!/bin/bash
 
-source ./install_miniconda.sh
+# ---- installing
 
-./config_miniconda.sh
+# 1. First, install conda
 
-./install_powerlevel.sh
+source ./programs/conda/install_conda.sh
 
-./install_neovim.sh
+# 2. Install & configure zsh 
 
-./install_rust.sh
+# Conda way
+source ./programs/zsh/install_zsh_conda.sh
+# Native way
+# source ./programs/zsh/install_zsh_dist.sh
 
-./install_lsd.sh
+# 3. Rust
+source ./programs/rust/install_rust.sh
+
+# 4. lsd
+source ./programs/lsd/install_lsd.sh
+
+# 5. neovim
+source ./programs/neovim/install_neovim.sh
+
+
+# ------ post-configuration
+
+# 1. conda
+source ./programs/conda/config_conda.sh
+
+# 2. lsd
+source ./programs/lsd/config_lsd.sh
+
+# 3. zsh
+source ~/.zshrc
+zsh
