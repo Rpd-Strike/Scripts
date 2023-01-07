@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # mkdir $HOME/apps
 mkdir -p $HOME/apps/neovim
