@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo " --> INSTALL neovim"
-
 # mkdir $HOME/apps
 mkdir -p $HOME/apps/neovim
 

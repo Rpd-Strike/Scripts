@@ -17,10 +17,12 @@ function _install_miniconda() {
     ${CONDA_INSTALL_PREFIX}/bin/conda upgrade -y --all
     ${CONDA_INSTALL_PREFIX}/bin/conda clean -ya
     ${CONDA_INSTALL_PREFIX}/bin/conda install -y conda-build conda-verify
-    ${CONDA_INSTALL_PREFIX}/bin/conda init --bash
+    ${CONDA_INSTALL_PREFIX}/bin/conda init bash
+    ${CONDA_INSTALL_PREFIX}/bin/conda init zsh
 }
 
 echo " --> Do miniconda install"
 
 _install_miniconda
+
 

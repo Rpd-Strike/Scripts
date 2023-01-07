@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo " --> CONFIG conda"
-
 TOOLS="cmake make gcc"
 
 source ./programs/conda/conda_path.sh
