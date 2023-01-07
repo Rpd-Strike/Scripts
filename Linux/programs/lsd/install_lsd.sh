@@ -2,4 +2,4 @@
 
 echo " --> INSTALL lsd"
 
-cargo install lsd
+$HOME/.cargo/bin/cargo install lsd

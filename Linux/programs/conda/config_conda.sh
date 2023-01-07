@@ -2,9 +2,9 @@
 
 echo " --> CONFIG conda"
 
-$TOOLS="cmake make gcc"
+TOOLS="cmake make gcc"
 
-source $(dirname "$0")/conda_path.sh
+source ./programs/conda/conda_path.sh
 
 echo " --> condapath: $CONDA_PATH"
 
