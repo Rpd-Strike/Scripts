@@ -10,4 +10,6 @@ chmod u+x nvim.appimage
 
 cd $OLDPWD
 
-echo 'alias nvim="$HOME/apps/neovim/nvim.appimage"' >> ~/.zshrc
+echo '
+## neovim alias
+alias nvim="$HOME/apps/neovim/nvim.appimage"' >> ~/.zshrc

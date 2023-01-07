@@ -1,7 +1,7 @@
 #!/bin/bash
 
-source ./programs/conda/conda_path.sh
+# prerequisites: install p10k
 
-$CONDA_PATH/bin/activate base
+source ~/.zshrc
 
 p10k configure

@@ -12,7 +12,7 @@ source ./programs/conda/config_conda.sh
 
 # 2. Install & configure zsh 
 
-echo " -->> installing zsh (press enter...)" && read
+# echo " -->> installing zsh (press enter...)" && read
 # Conda way
 source ./programs/zsh/install_zsh_conda.sh
 # Native way

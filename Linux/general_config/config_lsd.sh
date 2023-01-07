@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "
+
+### lsd aliases" >> ~/.zshrc
 echo "alias ls='lsd'" >> ~/.zshrc
 echo "alias lsc='lsd -1'" >> ~/.zshrc
 echo "alias lsa='lsd -a'" >> ~/.zshrc

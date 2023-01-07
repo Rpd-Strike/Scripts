@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo " --> INSTALL conda"
-
 # usage:
 #    $ ./install_miniconda.sh ~/apps/miniconda
 #
