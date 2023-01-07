@@ -6,8 +6,10 @@ echo " --> INSTALL conda"
 #    $ ./install_miniconda.sh ~/apps/miniconda
 #
 
-LOCAL_PATH=$(dirname "$0")
-source $LOCAL_PATH/conda_path.sh
+I_CONDA=$PWD
+
+cd $(dirname $0)
+source ./conda_path.sh
 
 function _install_miniconda() {
     wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ${INSTALLER_PATH}
@@ -24,3 +26,5 @@ function _install_miniconda() {
 echo " --> Do miniconda install"
 
 _install_miniconda
+
+cd $I_CONDA

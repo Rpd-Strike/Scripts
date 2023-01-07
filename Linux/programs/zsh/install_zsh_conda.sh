@@ -1,5 +1,10 @@
 #!/bin/bash
 
-source $(dirname "$0")/conda_path.sh
+I_ZSH=$PWD
+
+cd $(dirname $0)
+source ../conda/conda_path.sh
 
 $CONDA_PATH/bin/conda install zsh -y -c conda-forge
+
+cd $I_ZSH
