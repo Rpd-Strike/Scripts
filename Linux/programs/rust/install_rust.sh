@@ -1,9 +1,6 @@
 #!/bin/sh
 
-source ~/.bashrc # should activate base environment for gcc tools
-
-echo " ----- debugging: "
-conda env list
+# source ~/.bashrc # should activate base environment for gcc tools
 
 curl https://sh.rustup.rs -sSf | sh
 
