@@ -59,4 +59,4 @@ source ./general_config/config_p10k.sh
 
 # 4. bash to zsh
 echo " -->> configuring bash to start zsh (press enter ...)" && read
-source ./general_config/final_config.sh
+source ./general_config/final_config_bash.sh
