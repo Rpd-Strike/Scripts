@@ -7,4 +7,8 @@ conda env list
 
 curl https://sh.rustup.rs -sSf | sh
 
-echo -e '\n\n# Cargo / rustc \nexport PATH="$HOME/.rust/bin:$PATH"' >> ~/.zshrc
+echo -e '
+
+## Cargo / rustc 
+source $HOME/.cargo/env
+export PATH="$HOME/.rust/bin:$PATH"' >> ~/.zshrc
