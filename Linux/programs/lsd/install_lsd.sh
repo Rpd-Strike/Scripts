@@ -9,5 +9,7 @@ conda activate base
 
 conda info
 
+cc --version
+
 source $HOME/.cargo/env
 cargo install lsd
