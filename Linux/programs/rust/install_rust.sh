@@ -6,6 +6,6 @@ curl https://sh.rustup.rs -sSf | sh
 
 echo -e '
 
-## Cargo / rustc 
+### Cargo / rustc 
 source $HOME/.cargo/env
 export PATH="$HOME/.rust/bin:$PATH"' >> ~/.zshrc

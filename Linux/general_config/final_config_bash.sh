@@ -1,5 +1,6 @@
 #!/bin/bash
 
 echo "
-# Start zsh automatically
+
+### Start zsh automatically
 zsh" >> ~/.bashrc

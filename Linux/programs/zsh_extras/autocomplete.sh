@@ -6,5 +6,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 
 echo -e '
 
-# zsh autocomplete
+### zsh autocomplete
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
