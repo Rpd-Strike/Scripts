@@ -7,10 +7,10 @@ source $CONDA_PATH/etc/profile.d/conda.sh
 
 echo " --> condapath: $CONDA_PATH"
 
-conda activate base
+$CONDA_PATH/bin/activate base
 
-conda env list
+$CONDA_PATH/bin/conda env list
 
 echo " --> Installing conda tools: $TOOLS"
 
-conda install $TOOLS -y -c conda-forge
+$CONDA_PATH/bin/conda install $TOOLS -y -c conda-forge
