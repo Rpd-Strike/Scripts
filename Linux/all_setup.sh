@@ -15,7 +15,7 @@ source ./programs/zsh/install_zsh_conda.sh
 # source ./programs/zsh/install_zsh_dist.sh
 
 # 4. Install oh my zsh
-echo " -->> install oh-my-zsh (press enter...)" && read
+echo " -->> install oh-my-zsh (ATTENTION: exit after configuring) (press enter...)" && read
 source ./programs/ohmyzsh/install_ohmyzsh.sh
 
 # 3. Rust
