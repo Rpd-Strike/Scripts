@@ -10,7 +10,7 @@ function _install_miniconda() {
     wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ${CONDA_INSTALLER_PATH}
     echo " --> Finish download"
     chmod +x ${CONDA_INSTALLER_PATH}
-    ${CONDA_INSTALLER_PATH} -b -p ${CONDA_INSTALL_PREFIX}
+    bash ${CONDA_INSTALLER_PATH} -b -p ${CONDA_INSTALL_PREFIX}
     echo " --> Finish installing"
     source $CONDA_PATH/etc/profile.d/conda.sh
     ${CONDA_INSTALL_PREFIX}/bin/activate base
