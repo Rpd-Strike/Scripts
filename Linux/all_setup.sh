@@ -14,6 +14,10 @@ source ./programs/zsh/install_zsh_conda.sh
 # Native way
 # source ./programs/zsh/install_zsh_dist.sh
 
+# 4. Install oh my zsh
+echo " -->> install oh-my-zsh (press enter...)" && read
+source ./programs/ohmyzsh/install_ohmyzsh.sh
+
 # 3. Rust
 echo " -->> installing rust (press enter...)" && read
 source ./programs/rust/install_rust.sh
