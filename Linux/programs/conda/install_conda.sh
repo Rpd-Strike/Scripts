@@ -17,20 +17,18 @@ function _install_miniconda() {
     ${CONDA_INSTALL_PREFIX}/bin/conda init bash
     ${CONDA_INSTALL_PREFIX}/bin/conda init zsh
 
+    echo " --> try to activate conda in script"
     source ~/.bashrc
-    source ${CONDA_INSTALL_PREFIX}/etc/profile.d/conda.sh
-    echo " -->> first check "
-    ${CONDA_INSTALL_PREFIX}/bin/activate base
-    ${CONDA_INSTALL_PREFIX}/bin/conda info
+    source ./programs/conda/conda_activate.sh
+    conda_activate_for_scripts
+
+    conda info
     
-    echo " -->> second check "
-    ${CONDA_INSTALL_PREFIX}/bin/conda activate base
-    ${CONDA_INSTALL_PREFIX}/bin/conda info
+    conda upgrade -y --all -c conda-forge
+    conda clean -ya
     
-    ${CONDA_INSTALL_PREFIX}/bin/conda upgrade -y --all -c conda-forge
-    ${CONDA_INSTALL_PREFIX}/bin/conda clean -ya
     echo " --> installing base tools"
-    ${CONDA_INSTALL_PREFIX}/bin/conda install -y conda-build conda-verify make cmake gcc -c conda-forge
+    conda install -y conda-build conda-verify make cmake gcc -c conda-forge
     rm ${CONDA_INSTALLER_PATH}
 }
 
