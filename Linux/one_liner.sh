@@ -1,4 +1,4 @@
-cd /tmp
+#!/bin/bash
 
 git clone https://github.com/Rpd-Strike/Scripts && cd Scripts
 
