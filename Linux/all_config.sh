@@ -7,8 +7,8 @@ echo " -->> installing conda (press enter...)" && read
 source ./programs/conda/install_conda.sh
 
 # 1. conda config for build tools
-echo " -->> configuring conda (press enter...)" && read
-source ./programs/conda/config_conda.sh
+# echo " -->> configuring conda (press enter...)" && read
+# source ./programs/conda/config_conda.sh
 
 # 2. Install & configure zsh 
 
