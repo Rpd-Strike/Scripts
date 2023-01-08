@@ -1,3 +1,5 @@
+#!/bin/bash
+
 conda_activate_for_scripts() {
   # Workaround for a conda bug: https://github.com/conda/conda/issues/7980
   eval "$(${CONDA_INSTALL_PREFIX}/bin/conda shell.`basename -- $SHELL` hook)"

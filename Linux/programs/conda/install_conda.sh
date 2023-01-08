@@ -18,7 +18,6 @@ function _install_miniconda() {
     ${CONDA_INSTALL_PREFIX}/bin/conda init zsh
 
     echo " --> try to activate conda in script"
-    source ~/.bashrc
     source ./programs/conda/conda_activate.sh
     conda_activate_for_scripts
 
