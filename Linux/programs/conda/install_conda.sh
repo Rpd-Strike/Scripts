@@ -12,6 +12,7 @@ function _install_miniconda() {
     chmod +x ${CONDA_INSTALLER_PATH}
     ${CONDA_INSTALLER_PATH} -b -p ${CONDA_INSTALL_PREFIX}
     echo " --> Finish installing"
+    source $CONDA_PATH/etc/profile.d/conda.sh
     ${CONDA_INSTALL_PREFIX}/bin/activate base
     ${CONDA_INSTALL_PREFIX}/bin/conda upgrade -y --all -c conda-forge
     ${CONDA_INSTALL_PREFIX}/bin/conda info
@@ -19,6 +20,7 @@ function _install_miniconda() {
     echo " --> installing base tools"
     ${CONDA_INSTALL_PREFIX}/bin/conda install -y conda-build conda-verify make cmake gcc -c conda-forge
     rcho " --> init shells"
+    ${CONDA_INSTALL_PREFIX}/bin/conda info
     ${CONDA_INSTALL_PREFIX}/bin/conda init bash
     ${CONDA_INSTALL_PREFIX}/bin/conda init zsh
     rm ${CONDA_INSTALLER_PATH}
