@@ -8,4 +8,6 @@ cd $HOME/apps/ohmyzsh && ZSH=$HOME/.oh-my-zsh sh -c "$(curl -fsSL https://raw.gi
 
 cat $HOME/.zshrc.pre-oh-my-zsh >> ~/.zshrc
 
+cd $OLDPWD
+
 
