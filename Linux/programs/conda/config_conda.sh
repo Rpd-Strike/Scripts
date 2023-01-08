@@ -1,16 +1,18 @@
 #!/bin/bash
 
-TOOLS="cmake make gcc"
+echo "  nothing ..."
 
-source ./programs/conda/conda_path.sh
-source $CONDA_PATH/etc/profile.d/conda.sh
+# TOOLS="cmake make gcc"
 
-echo " --> condapath: $CONDA_PATH"
+# source ./programs/conda/conda_path.sh
+# source $CONDA_PATH/etc/profile.d/conda.sh
 
-$CONDA_PATH/bin/activate base
+# echo " --> condapath: $CONDA_PATH"
 
-$CONDA_PATH/bin/conda env list
+# $CONDA_PATH/bin/activate base
 
-echo " --> Installing conda tools: $TOOLS"
+# $CONDA_PATH/bin/conda env list
 
-$CONDA_PATH/bin/conda install $TOOLS -y -c conda-forge
+# echo " --> Installing conda tools: $TOOLS"
+
+# $CONDA_PATH/bin/conda install $TOOLS -y -c conda-forge
