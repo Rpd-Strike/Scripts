@@ -13,7 +13,7 @@ function _install_miniconda() {
     ${CONDA_INSTALLER_PATH} -b -p ${CONDA_INSTALL_PREFIX}
     echo " --> Finish installing"
     ${CONDA_INSTALL_PREFIX}/bin/activate base
-    ${CONDA_INSTALL_PREFIX}/bin/conda upgrade -y --all -c -conda-forge
+    ${CONDA_INSTALL_PREFIX}/bin/conda upgrade -y --all -c conda-forge
     ${CONDA_INSTALL_PREFIX}/bin/conda info
     ${CONDA_INSTALL_PREFIX}/bin/conda clean -ya
     echo " --> installing base tools"
