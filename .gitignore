@@ -1,0 +1,5 @@
+.vscode
+
+Random/CP-generator/**/*.exe
+Random/CP-generator/**/*.in
+Random/CP-generator/**/*.out
